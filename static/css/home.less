@@ -1,0 +1,383 @@
+.home{
+  width: 7.5rem;
+  margin: 0 auto;
+  padding-bottom: .89rem;
+  font-weight:bold;
+  .nav{
+    text-align: center;
+    font-size: .34rem;
+    color: #fff;
+    background: #333333;
+    width: 7.5rem;
+    height: .9rem;
+    line-height: .9rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      left: .3rem;
+      top: .35rem;
+      width: .2rem;
+      height: .2rem;
+      border-right: 1px solid #fff;
+      border-top: 1px solid #fff;
+      -webkit-transform: rotate(225deg); /*箭头方向可以自由切换角度*/
+      transform: rotate(225deg);
+    }
+  }
+  .banner{
+    width:7.5rem;
+    height:11.11rem;
+    background: #cbf1dd;
+    margin-top: .9rem;
+    overflow: hidden;
+    position: relative;
+    .banner-list{
+      width:7.09rem;
+      height:10.18rem;
+      margin: .54rem auto 0;
+      text-align: center;
+      background: #fff;
+      img{
+        margin-top: .15rem;
+        width:6.90rem;
+        height:9.20rem;
+        border-radius:.2rem;
+      }
+    }
+    .banner-txt{
+      position: absolute;
+      right: .3rem;
+      bottom: .6rem;
+      color: #BFC9D8;
+      font-size:.24rem;
+    }
+  }
+  .address{
+    background: #fff;
+    overflow: hidden;
+    padding-top: .2rem;
+    .address-list{
+      width:7.09rem;
+      //height:13.97rem;
+      margin: .2rem auto .3rem;
+      box-shadow: .02rem .04rem .08rem .06rem #e2f6e9;
+      .title{
+        padding-top: .1rem;
+        text-align: center;
+        h3{
+          font-size:.48rem;
+          color: #231E1B;
+          font-weight: bold;
+          margin: .4rem auto .2rem
+        }
+        p{
+          color: #989898;
+          margin-bottom:.6rem;
+        }
+      }
+      .img{
+        width:6.90rem;
+        height:9.20rem;
+        margin: 0 auto;
+        margin-bottom: .2rem;
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius:.20rem;
+        }
+      }
+      .map{
+        width:6.90rem;
+        height:2.30rem;
+        margin: 0 auto;
+        #container{
+          width: 100%;
+          height: 100%;
+          border-radius:.20rem;
+        }
+      }
+    }
+  }
+  .record{
+    background: #fdf0d2;
+    overflow: hidden;
+    .title{
+      text-align: center;
+      h3{
+        font-size: .48rem;
+        color: #231E1B;
+        font-weight:bold;
+        margin: .57rem auto .2rem;
+      }
+      p{
+        font-size:.26rem;
+        color: #989898;
+      }
+      .img1{
+        width: 7.5rem;
+        height: 2.66rem;
+        background: url("../images/record-bg1.png") no-repeat;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+      }
+      .img2{
+        width: 7.5rem;
+        height: 1.92rem;
+        background: url("../images/record-bg2.png") no-repeat;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+      }
+    }
+    .msg{
+      width: 6.8rem;
+      height: 6rem;
+      overflow-y: auto;
+      background: #fff;
+      margin: 0 auto;
+      padding: .2rem;
+      border-radius: .08rem;
+      .four-msg-list{
+        display: flex;
+        margin-bottom: .20rem;
+        position: relative;
+        .four-msg-yuan{
+          position: absolute;
+          left:1.2rem;
+          top: 0;
+          width: .27rem;
+          height: .27rem;
+          background: #45C672;
+          border-radius: 50%;
+
+        }
+        .four-msg-line{
+          position: absolute;
+          left: 1.34rem;
+          top: 0.23rem;
+          width: .02rem;
+          height: 100%;
+          background: #45C672;
+        }
+        .four-msg-time{
+          //width: 1.00rem;
+          text-align: center;
+          .four-msg-year{
+            font-size: .3rem;
+            margin-bottom: .05rem;
+            color: #45C672;
+          }
+          .four-msg-mounth{
+            font-size: .24rem;
+            color: #45C672;
+          }
+        }
+        .four-msg-msg{
+          margin-left: 1rem;
+          .four-msg-txt{
+            font-size: .24rem;
+            color: #45C672;
+            margin-bottom: .2rem;
+          }
+          .four-msg-img{
+            display: flex;
+            justify-content: space-between;
+            img{
+              width:1.47rem;
+              height:1.39rem;
+              margin-right: .1rem;
+              margin-bottom: .1rem;
+            }
+          }
+        }
+      }
+      .four-msg-list:nth-last-child(1){
+        .four-msg-line{
+          display: none;
+        }
+      }
+    }
+    .bottom{
+      width: 7.5rem;
+      height: 1.71rem;
+      background: url("../images/record-bottom.png") no-repeat;
+      -webkit-background-size:100% 100%;
+      background-size:100% 100%;
+    }
+  }
+  .report{
+    padding: 0 .1rem .6rem;
+    background: #fff;
+    overflow: hidden;
+    .title{
+      width:5.4rem;
+      line-height:.6rem;
+      margin: .3rem auto .6rem;
+      color: #231E1B;
+      font-size:.48rem;
+      font-weight:bold;
+    }
+    .report-list{
+      display: flex;
+      flex-wrap: wrap;
+      .list{
+        width:2.32rem;
+        height:3.10rem;
+        background: #cea66c;
+        margin: .05rem;
+        .txt{
+          font-size:.32rem;
+          text-align: center;
+          color: #8C5631;
+          width: 1.4rem;
+          margin: .2rem auto .26rem;
+          line-height: .5rem;
+        }
+        .img{
+          width: 1.79rem;
+          height: .79rem;
+          margin: 0 auto;
+          background: url("../images/report.png") no-repeat;
+          -webkit-background-size:100% 100% ;
+          background-size:100% 100% ;
+        }
+        .date{
+          font-size:.24rem;
+          color: #8C5631;
+          text-align: center;
+          margin-top: .3rem;
+        }
+      }
+    }
+    .more{
+      width: 2.29rem;
+      height: .65rem;
+      background: url("../images/more.png") no-repeat;
+      -webkit-background-size:100% 100%;
+      background-size:100% 100%;
+      margin: .7rem auto 0;
+    }
+  }
+  .other{
+    padding: 0 .1rem;
+    background: #f1f1f1;
+    overflow: hidden;
+    .title{
+      margin: .6rem auto .7rem;
+      p{
+        line-height:.6rem;
+        color: #231E1B;
+        font-weight:bold;
+        font-size:.48rem;
+        width:4.6rem;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    .report-list{
+      display: flex;
+      flex-wrap: wrap;
+      .list{
+        width:2.32rem;
+        height:3.10rem;
+        margin: .05rem;
+        background: #fff;
+        .img{
+          width: 2.32rem;
+          height: 2.42rem;
+          margin: 0 auto;
+          background: url("../images/other.png") no-repeat;
+          -webkit-background-size:100% 100% ;
+          background-size:100% 100% ;
+          text-align: center;
+          span{
+            display: inline-block;
+            color: #C8905D;
+            font-size:.32rem;
+            width: 1.4rem;
+            margin-top: 1rem;
+          }
+        }
+        .date{
+          font-size:.24rem;
+          color: #C8905D;
+          text-align: center;
+          margin-top: .1rem;
+        }
+      }
+    }
+    .more{
+      width: 2.29rem;
+      height: .65rem;
+      background: url("../images/more.png") no-repeat;
+      -webkit-background-size:100% 100%;
+      background-size:100% 100%;
+      margin: .7rem auto .5rem;
+    }
+  }
+  .welcome{
+    background: #fdf0d2;
+    width:7.5rem;
+    height:2.09rem;
+    overflow: hidden;
+    .welcome-list{
+      width:7.04rem;
+      height:1.45rem;
+      text-align: center;
+      margin: .2rem auto 0;
+      padding-bottom: .2rem;
+      background: #fff;
+      border-radius: 0.08rem;
+      h3{
+        font-size:.44rem;
+        color: #333333;
+        font-weight:bold;
+        padding: .3rem 0 .2rem;
+      }
+      p{
+        color:#8E8E8E;
+        font-size:.24rem;
+        span{
+          color: #45C672;
+        }
+      }
+    }
+  }
+  .code{
+    width: 7.5rem;
+    height: 6.9rem;
+    background: #f7f8f9;
+    overflow: hidden;
+    .code-list{
+      width:7.02rem;
+      height:6.09rem;
+      margin: .4rem auto 0;
+      background: #fff;
+      text-align: center;
+      p{
+        width: 2.8rem;
+        padding-top: .5rem;
+        margin: 0 auto .5rem;
+        text-align: center;
+        font-size:  .24rem;
+        color: #999;
+      }
+      .img{
+        width: 4.28rem;
+        height: 4.27rem;
+        margin: 0 auto;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
